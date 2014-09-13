@@ -107,7 +107,10 @@ header h2 {
 
 #main-content img {
   max-width: 100%;
+  margin-right:5px;
 }
+
+
 
 aside#sidebar {
   width: 200px;
@@ -149,10 +152,10 @@ header a.button {
   background: transparent url(../images/github-button.png) 0 0 no-repeat;
 }
 aside a.button {
-  width: 138px;
+  width: 256px;
   padding-left: 64px;
   display: block;
-  background: transparent url(../images/download-button.png) 0 0 no-repeat;
+  background: transparent url(../images/googleplay-button.png) 0 0 no-repeat;
   margin-bottom: 20px;
   font-size: 21px;
 }

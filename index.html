@@ -4,7 +4,7 @@
     <meta charset='utf-8'>
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Play' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
     <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen">
     <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
@@ -20,7 +20,7 @@
     <header>
       <div class="inner">
         <h1>Droidsound-E</h1>
-        <h2>Droidsound-E, an enhanced version of original Droidsound.</h2>
+        <h2>A music player for various computer and console formats.</h2>
         <a href="https://github.com/droidmjt/Droidsound" class="button"><small>View project on</small>GitHub</a>
       </div>
     </header>
@@ -28,52 +28,146 @@
     <div id="content-wrapper">
       <div class="inner clearfix">
         <section id="main-content">
-          <h3>
-<a name="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages"><span class="octicon octicon-link"></span></a>Welcome to GitHub Pages.</h3>
+          <h2>
+<a name="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages"><span class="octicon octicon-link"></span></a>Welcome to Droidsound-E help page.</h2>
 
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
+<p>This page is dedicated to Droidsound-E documentation and it's main purpose is to help users to tackle problems at the beginning.</p>
 
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
-</code></pre>
+<h2><a name="designer-templates" class="anchor" href="#designer-templates"><span class="octicon octicon-link"></span></a>The main menu</h2>
+Starting from version 1.65 the main menu will look like this when installing it for the first time.<br><br>
+<img src="images/dse_mainmenu.png" alt=""/><br>
+<p>As it can be seen, the Local Mediastore is no more there but it can be added back from the "New" button for those who needs it. 
+Also there is a new item, DSEMusic, which is a pre-defined mountpoint for music.</p>
 
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
+<p>
+The pre-defined mountpoint is pointing to /mnt/sdcard/DSEMusic, so all you need to do is copy your files there and rescan the folder.</p>
 
-<h3>
-<a name="designer-templates" class="anchor" href="#designer-templates"><span class="octicon octicon-link"></span></a>Designer Templates</h3>
+Another thing that is missing is Favorites.plist. This is because there is a dedicated playlist tab on the right.<br><br>
+<img src="images/dse_playlists.png" alt=""/><br>
+<br>
 
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
+<h2><a name="Items" class="anchor" href="#Items"><span class="octicon octicon-link"></span></a>Add new items</h2>
+<ul>
+<h3><a name="searches" class="anchor" href="#searches"><span class="octicon octicon-link"></span></a>Filebrowser</h3>
+<p>
+The application supports mounting folders as browsable directories. It works by clicking the PLUS sign on the action bar
+and choosing Filebrowser. A new window appears where user can input the mountpoint and mountpoint name. Clicking the 
+mountpoint box opens folder selector. Select your folder and click Select Folder button. After that, enter the name 
+for your mountpoint and click OK. 
+</p>
+<h3><a name="searches" class="anchor" href="#searches"><span class="octicon octicon-link"></span></a>Modland DB</h3>
+<p>
+By clicking this item a new dialog will show up asking for a name for the Modland offline DB. Since there can be only one at a time, 
+just select internal or external memory and click OK. It will then download allmods.zip from modland and start indexing entries from it. This will take around 5-10 minutes.
+After indexing a new entry will show up in the main menu. Inside the ModDB it looks like user would be browsing the modland archive online.
+</p>
+<h3><a name="searches" class="anchor" href="#searches"><span class="octicon octicon-link"></span></a>Network Link</h3>
+<p>
+By clicking this item a new dialog will show up asking for a network address and a name for it. The network address accepts username, password, hostname, port and path. Few examples listed below.
+<ul>
+<li>ftp://ftp.modland.com/</li>
+<li>ftp://user:passwd@123.23.2.1:12342/</li>
+<li>http://www.mymusicplace.com</li>
+</ul>
+</p>
+<h3><a name="searches" class="anchor" href="#searches"><span class="octicon octicon-link"></span></a>Local Mediastore</h3>
+<p>
+This item will create instantly a new Local MediaStore browser.
+</p>
+<h3><a name="searches" class="anchor" href="#searches"><span class="octicon octicon-link"></span></a>Playlist</h3>
+<p>
+By clicking this item, a new dialog will pop up asking a name for the playlist. After entering a name and clicking OK, a new
+entry will show up in playlists tab. This new playlist will automatically become active playlist.</p>
 
-<h3>
-<a name="rather-drive-stick" class="anchor" href="#rather-drive-stick"><span class="octicon octicon-link"></span></a>Rather Drive Stick?</h3>
 
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
+</ul>
 
-<h3>
-<a name="authors-and-contributors" class="anchor" href="#authors-and-contributors"><span class="octicon octicon-link"></span></a>Authors and Contributors</h3>
+<h2><a name="searches" class="anchor" href="#searches"><span class="octicon octicon-link"></span></a>Searches</h2>
 
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
+<p>
+The search screen shows the latest search results, and also provides a button for searching. The search screen works similar to the Browser.
+You can search for song titles or composers when searching the song databases.The following commands are available in search screen:
+<ul>
+Every search needs a prefix as shown below.<br>
 
-<h3>
-<a name="support-or-contact" class="anchor" href="#support-or-contact"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
+<li> .c = searches by composer (local files)</li>
+<li> .t = searches by title (local files)</li>
+<li> .r = searches songs online from http://remix.kwed.org</li>
+<li> .a = searches songs online from http://amigaremix.com</li>
+<li> .h = searches sid songs online from http://hvsc.de, sometimes this is slow</li>
+<li> .i = searches radio stations from IceCast</li>
+<li> .m = searches by various DB entry. Usually helpful with filename search</li>
+<li> ,c = searches by composer (Modland files)</li>
+<li> ,t = searches by title (Modland files)</li>
+<li> ,n = searches by composer and title (Modland files)</li>
 
-<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
+<br>
+Examples: <li>.cskaven</li>
+          <li>.aturrican</li>
+		  <li>.hJeroen</li>
+		  <li>.mfilename, stars.xm</li>
+		  <li>.mtitle, commando</li>
+		  <li>.ivideo game</li>
+</ul>
+NOTE: playing online songs happens by streaming. Only SID files will be downloaded since they are very small in size.
+</p>
+<h2><a name="archives" class="anchor" href="#archives"><span class="octicon octicon-link"></span></a>Archive support</h2>
+<p>
+Droidsound-E has support for .zip, .7z, .rar and .gz files. These archives are treated as directories. Maximum supported
+archive size is approximately 2GB. There are some limitations, for example ZIP supports only Deflate compression and 
+7zip support LZMA/LZMA2/PPMd. Other compresson methods will make Droidsound-E behave bad. Also it is NOT RECOMMENDED to use
+SOLID-BLOCK archiving for .7z files. Those archives are memory consuming and very slow to process especially on mobile device.
+</p>
+
+
+
+<h2><a name="ringtones" class="anchor" href="#ringtones"><span class="octicon octicon-link"></span></a>Ringtones</h2>
+<p>
+
+
+To create a ringtone from a song, long press the song and select Create Ringtone and choose the desired options.
+Default format is WAV 22KHz mono, select HQ for Stereo 44KHz.
+
+If you want to create a ringtone from another subtune then the default one, you need to use the PLUS button on 
+the play screen to add a specific song to your playlist, and then create the ringtone from that playlist entry instead.
+</p>
+
+<h2><a name="upgrading" class="anchor" href="#upgrading"><span class="octicon octicon-link"></span></a>Upgrading from earlier version</h2>
+
+If you are upgrading from earlier Droidsound-E version, there shouldn't be any problems. Rescanning will be performed as usual since the version has changed.
+<br><br>
+If you are upgrading from normal Droidsound, the following steps should be done:
+<p>
+<ul>
+	<li> Backup your files from the following folders:
+<ul>
+	<li>/mnt/sdcard/droidsound</li>
+	<li>/mnt/sdcard/MODS</li> 
+	</ul>
+<li>Delete above folders after backup.</li>
+<li>Uninstall Droidsound, clean cache and everything related to it.</li>
+
+<li>Restart Droidsound-E application, it will recreate all the files it needs.</li>
+</ul>
+</p> 
+
+<h2><a name="tips" class="anchor" href="#tips"><span class="octicon octicon-link"></span></a>Tips</h2>
+<ul>
+<li> If you don't like to keep rescanning enabled, rescan your files manually if you move them around.</li>
+<li> Sometimes it is a good idea to keep small files insize a ZIP, it scans faster.</li>
+<li> If Droidsound-E crashes when you start it for the first time, don't panic, try restarting it.</li>
+<li> Got unexpected crash when using Droidsound-E? Try to remember how you made it crash and e-mail me the details.</li>
+</ul>
+
+
+<h2><a name="Contact" class="anchor" href="#Contact"><span class="octicon octicon-link"></span></a>Contact</h2>
+
+<p>Having trouble with Droidsound-E? You can contact me at <a href="mailto:droidmjt@gmail.com">droidmjt@gmail.com</a></p>
         </section>
 
-        <aside id="sidebar">
-          <a href="https://github.com/droidmjt/Droidsound/zipball/master" class="button">
-            <small>Download</small>
-            .zip file
-          </a>
-          <a href="https://github.com/droidmjt/Droidsound/tarball/master" class="button">
-            <small>Download</small>
-            .tar.gz file
-          </a>
+        <aside id="sidebar"><a href="https://play.google.com/store/apps/details?id=com.droidmjt.droidsounde" class="button"></a>
 
-          <p class="repo-owner"><a href="https://github.com/droidmjt/Droidsound"></a> is maintained by <a href="https://github.com/droidmjt">droidmjt</a>.</p>
-
-          <p>This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the Architect theme by <a href="https://twitter.com/jasonlong">Jason Long</a>.</p>
+        <p>This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the Architect theme by <a href="https://twitter.com/jasonlong">Jason Long</a>.</p>
         </aside>
       </div>
     </div>
