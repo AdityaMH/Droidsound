@@ -110,8 +110,6 @@ header h2 {
   margin-right:5px;
 }
 
-
-
 aside#sidebar {
   width: 200px;
   padding-left: 20px;
@@ -141,6 +139,18 @@ a.button {
   padding-top: 22px;
   font-family: 'Architects Daughter', 'Helvetica Neue', Helvetica, Arial, serif; 
 }
+
+a.button2 {
+  width: 134px;
+  height: 58px;
+  line-height: 1.2;
+  font-size: 23px;
+  color: #fff;
+  padding-left: 68px;
+  padding-top: 22px;
+  font-family: 'Architects Daughter', 'Helvetica Neue', Helvetica, Arial, serif; 
+}
+
 a.button small {
   display: block;
   font-size: 11px;
@@ -159,6 +169,16 @@ aside a.button {
   margin-bottom: 20px;
   font-size: 21px;
 }
+
+aside a.button2 {
+  width: 202px;
+  padding-left: 64px;
+  display: block;
+  background: transparent url(../images/download-button.png) 0 0 no-repeat;
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+
 
 code, pre {
   font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
@@ -463,6 +483,7 @@ footer a:hover {
   aside#sidebar a.button {
     display: none;
   }
+  
   #main-content h1:before,
   #main-content h2:before,
   #main-content h3:before,
